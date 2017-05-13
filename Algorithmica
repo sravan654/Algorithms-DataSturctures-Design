@@ -1,0 +1,216 @@
+Syllabus
+
+1. Understanding the hardware of modern computer machines and how to use it effectively
+Biology of computer machine
+Disk vs Memory performance
+Understanding multi-core processor and software apporach to use mutli-cores (Multi-threading)
+Persisting/Transferring state of In-memory objects(Serialization)
+Code examples
+2. How to solve a problem with computer machine & expressing solutions to machines
+Understanding the problem solving approach with an example
+Meaning of an algorithm & need of programming languages to talk to machines
+Understanding the algorithmic design & analysis
+Understanding Asymptotic analysis & O,Ω,Θ notations
+Code Examples
+3. Illustrating basic problem solving techniques
+Discussion on better algorithms for following problems, analysis & coding
+Finding common elements between two arrays
+Finding mode of an array of elements
+Finding missing elements in an array with restricted range for elements
+Assignment Problems
+4. DataStructure design
+Step1: Gathering requirements and tranform it into ADT/API
+Step2: Selecting the programming style: Procedural/Object-oriented style
+Step3: Implementation of API
+Practical illustration of "List" datastructure design
+List design using Procedual style(C)
+List design using Object oriented style(C++/Java)
+Illustration of OO concepts with design: Object, Class, Encapsulation, Polymorphism, Dynamic binding, Inheritance
+5. ArrayList & Linked List
+Understanding Implementation of ArrayList & LinkedList
+Understanding Amortized Analysis
+Singly Linked List vs Doubly Linked List
+Practical importance of doubly linked list & circular links
+Discussion on better algorithms for following problems, analysis & coding
+Reversing of single linked list
+Implementing Josephus problem
+Duplicate removal in a linked list
+Finding middle of the linked list
+Finding common node in two corrupted lists
+Sorting of linked list
+Finding K-th node from the end of the linked list
+Detecting & Removing loop in Single linked list
+Assignment Problems
+3. Stack & Queue
+Understanding Stack & Queue
+Practical Significance of Stack & Queue
+Discussion on implementation choices
+Discussion on better algorithms for following problems, analysis & coding
+Infix to postfix conversion
+Evaluation of postfix Expression
+Balancing of Symbols
+Stack with Single Queue
+Queue with two Stacks
+Assignment Problems
+5.Priority Queue
+Understanding Priority Queue
+Practical Significance of Priority Queue
+Discussion on implementation techniques of Priority Queue
+Implementation of priority queue using Heap
+Discussion on better algorithms for following problems, analysis & coding
+File Merging
+Merging k-sorted lists into a single sorted list
+Finding K closest points to origin in 2-d space
+Assignment Problems
+6. Binary Tree
+Understanding Binary Trees
+Practical Significance of Binary Trees
+Discussion on implementation techniques of BinaryTrees
+Discussion on better algorithms for following problems, analysis & coding
+Recursive traversals of Binary Tree (Inorder, Preorder, Postorder)
+Non Recursion traversals of Binary Tree(Inorder, Preorder, Postorder)
+Implementation of level order Traversal
+Generating mirror image of a tree
+Finding the count of leaf nodes and internal nodes
+Construction of binary tree from preorder and inorder traversals
+Stack or Queue less Traversals
+Assignment Problems
+7. Binary Search Tree & Balanced Search Tree(AVL/RB)
+Understanding Binary Search Trees & Balanced Search Trees
+Practical Significance of Balanced Search Trees
+Implementation of Balanced Search Tree Operations
+Discussion on better algorithms for following problems, analysis & coding
+Finding LCA (Least Common Ancestor) in BST
+Searching a word in online dictionary
+Assignment Problems
+8. Hash Table
+Understanding Hash Table
+Practical Significance of Hash Table
+Implementation of Hash Table using array of linked lists
+Discussion on better algorithms for following problems, analysis & coding
+Finding First Repeated and Non Repeated element
+Finding most frequent Words in a file
+Finding number of anagram classes among group of words available in file
+Assignment Problems
+9. Tries & Patricia Tries
+Understanding the concept of Tries
+Practical Applications of Tries
+Designing better algorithms for following problems, analysis & coding
+Implementation of Set & Map using Tries
+Implementation of Phone Book
+Implementation of T9 Input Mode in Mobiles
+Spell Checker
+Assignment Problems
+10. Ternary Search Trees
+Understanding the concept of TST
+Practical importance of TST
+Designing better algorithms for following problems, analysis & coding
+Implementation of Set & Map using TST
+Implementation of Phone Bok
+Assignment Problems
+11. Sorting Techniques
+Understanding the importance of sorting in programming
+Understanding the ideas behind following Comparison based sorting techniques
+Selection sort, Bubble sort, Insertion sort, Shell sort
+Quick sort, Merge sort, Heap sort
+Understanding the ideas behind following Non-Comparison based sorting techniques
+Counting sort
+Radix sort
+Designing better algorithms for following problems, analysis & coding
+2-Sum problem
+3- sum problem
+Assignment Problems
+12.Searching techniques
+Understanding the importance of searching in programming
+Understand the ideas behind following search techniques
+Linear search
+Binary search
+Interpolation search
+Designing better algorithms for following problems, analysis & coding
+Identity problem
+Searching an element in an array of unknown size
+Finding an element in a bi-tonic array
+Assignment Problems
+13. Recursion
+Understanding the concept of Recursion & Activation Record
+RecursionTree
+Designing better algorithms for following problems, analysis & coding
+Towers of Hanoi
+Variations on Towers of Hanoi
+Finding Power & GCD
+Maze problems
+Assignment Problems
+14. Divide and Conquer Algorithms
+Understanding the concept of Divide & Conquer
+Forming D&C relations and Solving them
+Designing better algorithms for following problems, analysis & coding
+Quick sort
+Merge sort
+Strassen’s Matrix Multiplication Algorithm
+Assignment Problems
+15. Greedy Algorithms
+Understanding the concept of Greedy Method
+Designing better algorithms for following problems, analysis & coding
+Compression of textual data
+Interval coloring
+FActivity selection problem
+Scheduling with deadlines
+Fractional knapsack problem
+Shortest job first
+Assignment Problems
+16. Dynamic programming
+Understanding the concept of Dynamic programming
+Designing better algorithms for following problems, analysis & coding
+Finding Nth Fibonacci number
+Finding maximum contiguous subsequence sum
+Finding Largest common sub sequence
+Coin changing problem
+0/1 Knapsack problem
+Subset sum problem
+Matrix Chain Multiplication problem
+Assignment Problems
+17. Back Tracking
+Understanding the concept of Back-tracking
+Designing better algorithms for following problems, analysis & coding
+Generating Binary Sequences
+Generating all possible combinations of input array
+Generating permutations
+Eight queues problem
+Knights tour problem
+Assignment Problems
+18. Graphs
+Understanding the concept of Graphs
+Practical importance of Graphs
+Standard Graph algorithms & their applications to reality
+Traversal algorithms(BFS and DFS)
+Connected components, Articulation points & Bridges
+Minimum Spanning tree algorithms (prim’s and kruskal’s)
+Shortest path algorithms
+Dijkstra’s algorithm
+Bellman Ford’s algorithm
+Floyd-Warshall’s algorithm
+Assignment Problems
+19. Suffix Array, Suffix Tree & String Algorithms
+Understanding the concept of Suffix Array & Tree
+Practical Applications of Suffix Array & Tree
+Designing better algorithms for following problems, analysis & coding
+Finding the length of longest repeated substring
+Pattern Matching
+Finding the length of longest repeated substring in a given string
+Assignment Problems
+20. BitArray & Bloom Filter
+Understanding the concept Bit Array, Bloom Filter
+Practical importance of Bit Arrays & Bloom Filters
+Assignment Problems
+21. Multi-threaded programming
+Need of threads & benefits of multiple threads
+Multi-threaded object design techniques
+Designing better algorithms for following problems, analysis & coding
+Shared Mutable Object design
+Pattern Matching
+Finding the length of longest repeated substring in a given string
+Assignment Problems
+22. Serialization of In-memory objects
+Understanding the need of serialization & deserialization
+Serialization of ArrayList, LinkedList, HashSet, TreeSet, Trie, BitSet, BloomFilter & BinaryTree objects
+Assignment Problems
