@@ -13,13 +13,27 @@ Heap must follow below two rules.
  
  2. Heap Property
  
-  A heap is built, based on the Heap property, by comparing the parent node key with its child node keys. This comparison is done based on the heap property. The two heap structures that we are going to cover in this chapter are:
+  A heap is built, based on the Heap property, by comparing the parent node key with its child node keys. This comparison is done based on the heap property.
+  The two heap structures that we are going to cover in this chapter are:
 
       Min Heap
       Max Heap
       
       Max Heap Property:
-This property states that all the parent node keys must be greater than or equal to their child node keys. So the root node, in this case, will always contain the largest element present in the Heap. 
+This property states that all the parent node keys must be greater than or equal to their child node keys. So the root node, 
+in this case, will always contain the largest element present in the Heap. 
 
  Min Heap Property:
-In Min Heap, all the parent node keys are less than or equal to their child node keys. This goes without saying that the rule will apply to all children of the node. So the root node, in this case, will always contain the smallest element present in the Heap. If Node A has a child node B, then,
+In Min Heap, all the parent node keys are less than or equal to their child node keys. This goes without saying that the rule will apply to all children of the node.
+So the root node, in this case, will always contain the smallest element present in the Heap. If Node A has a child node B, then,
+
+
+Heap Representation in Arrays
+
+Heaps can be implemented using Arrays. The contents of a heap with n nodes are stored in such a way that all the parent nodes occur in the first half of array (n/2),
+while the leaves are present at the last n/2 positions. So the last parent will be at the n/2th position
+
+The node at the kth position will have its children placed as follows:
+
+The Left child at 2k+1
+The Right child at 2k+2.
