@@ -78,3 +78,19 @@ break;
 }
 
 }
+
+
+Time Complexity
+The worst-case time complexity of maxHeapify() is 
+O(lgn)
+ because we start with the rightmost leaf node in the heap, then move left and then up until we reach the root node.
+ 
+ In buildMaxHeap(), the heapify function is called 
+
+O(n)
+ times. Therefore, the overall time complexity of building a Heap seems to be 
+
+O(n(lgn))
+, but this is a very loose upper bound. A more accurate and tight upper-bound for the build heap operation is 
+
+O(n)
