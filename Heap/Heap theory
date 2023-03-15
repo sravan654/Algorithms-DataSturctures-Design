@@ -1,0 +1,25 @@
+
+Heap must follow below two rules.
+1. A Heap tree must be a Complete Binary Tree.
+2. The nodes must be ordered according to the Heap Property.
+
+1. Complete Binary Tree
+    A Complete Binary Tree is a tree where each node has a max. of two children and nodes at all levels are completely
+  filled (except the leaf nodes). But the nodes at the last level must be structured in such a way that the left side is never empty.
+  This is the only condition that differentiates Complete Binary Trees from other trees.
+  
+  A Heap uses Complete Binary Trees to avoid holes in the array.
+  
+ 
+ 2. Heap Property
+ 
+  A heap is built, based on the Heap property, by comparing the parent node key with its child node keys. This comparison is done based on the heap property. The two heap structures that we are going to cover in this chapter are:
+
+      Min Heap
+      Max Heap
+      
+      Max Heap Property:
+This property states that all the parent node keys must be greater than or equal to their child node keys. So the root node, in this case, will always contain the largest element present in the Heap. 
+
+ Min Heap Property:
+In Min Heap, all the parent node keys are less than or equal to their child node keys. This goes without saying that the rule will apply to all children of the node. So the root node, in this case, will always contain the smallest element present in the Heap. If Node A has a child node B, then,
