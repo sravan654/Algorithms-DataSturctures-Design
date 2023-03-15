@@ -1,0 +1,71 @@
+Building a Min-Heap
+A Min Heap follows the Min Heap property, which means the key at the parent node is always smaller than keys at both children nodes.
+
+Heaps can be implemented using arrays. Initially, elements are placed in nodes in the same order as they appear in the array.
+Then a function is called over the whole Heap in a bottom-up manner, which “Min Heapifies” this Heap so that the Heap property is satisfied on all nodes.
+
+When we say bottom-up, we mean the function starts from the last parent node present in the n/2th position of the array, 
+and checks if the values at the children nodes are smaller than the parent node. If yes, then swap the values; if no, then move to the next parent node.
+
+
+Insertion in Min Heap
+If you want to insert a new element in a Min Heap, you will have to follow a list of steps to make sure the Heap property still holds after adding the element. Here’s the list of steps that you will perform:
+
+Create a new child node at the end of the heap
+Place the new key at that node
+Compare the value with its parent node key
+If the key is smaller than the key at the parent node, swap values
+If both keys at the children nodes are smaller than the parent node key, then pick the smallest one and see if the Heap property is satisfied.
+Repeat until you reach the root node
+
+Deletion in Min Heap
+Deletion is performed in the same way as in Max Heap. We will take the case of deleting the smallest element here as we are discussing Min Heaps. Given below is the list of steps you will follow to make sure the Heap property still holds after deleting the root element:
+
+Delete the root node
+Move the key of the last child node (at the last level) to the root
+Now compare the key with its children
+If the key is greater than the key at any of the children nodes, swap values
+If both keys at children nodes are smaller than the parent node key, pick the smallest one and see if the Heap property is satisfied.
+Repeat until you reach the last level
+
+Class MinHeap{
+ public static void main(String[] args){
+ int[] heap =  { 31, 11, 7, 12, 15, 14, 9, 2, 3, 16 };
+ new MinHeap().buildMinHeap(heap, heap.length);
+ }
+ 
+ public void buildMinHeap(int[] heap, int size){
+ for(int i=size-1/2; i>-0; i--){
+ minHeapify(heap, i, size);
+ }
+ }
+ 
+ private void minHeapify(int[] heap, int index, int size){
+ int smallest = index;
+ while(smallest < size/2){
+ int left = 2*index+1;
+ int right = 2*index+2;
+ 
+ if(left < size && heap[left] < heap[index]){
+ smallest = left;
+ }
+ if(right < size && heap[right] < heap[smallest]){
+ smallest = right;
+ }
+ if(smallest != index){
+ int temp = heap[smallest];
+ heap[smallest] = heap[index];
+ heap[index] = temp;
+ index = smallest;
+ }
+ else{
+ break;
+ }
+ 
+ 
+ Time Complexity of Min-Heap#
+The overall time complexity of building the Heap in a Min Heap is the same as a Max Heap: 
+O(n)
+.
+
+You see, just like Max Heap, we have implemented a whole data structure with the help of only two major basic functions.
