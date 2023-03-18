@@ -1,0 +1,15 @@
+What is a Bipartite Graph?
+
+A Bipartite Graph is a special kind of Graph, in which the vertices can be divided into two disjoint sets U and V such that n
+o vertex of U is adjacent to any other vertex in U and no vertex of V is adjacent to any other vertex in V. Vertices in U have edges that connect it to vertices in V.
+
+Note: A graph cannot be Bipartite if there are an odd number of vertices and has an odd cycle i.e., a cycle between the odd number of vertices.
+
+Types of bipartite graphs
+Some other types of Bipartite graphs are listed below:
+
+Complete Bipartite Graphs: A complete Bipartite graph connects each vertex from set V1 to each vertex from set V2.
+
+Star Graphs: A star graph is a complete bipartite graph if a single vertex belongs to one set, and all the remaining vertices belong to the other set.
+
+Acyclic Graphs: A graph with no cycles is called an acyclic graph.
