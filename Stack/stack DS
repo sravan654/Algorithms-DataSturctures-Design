@@ -1,0 +1,43 @@
+public class Stack {
+   private V[] array;
+   privat int top;
+   private int maxSize;
+   private int currentSize;
+   
+   public Stack(int maxSize){
+    this.top = -1;
+    this.maxSize = maxSize;
+    array = (V[]) new Object[maxSize];
+    currentSize = 0;
+   }
+   
+   public int getCurrentSize(){
+    return currentSize;
+   }
+   
+   public int getmaxSize(){
+    return maxSize;
+   }
+   
+   public boolean isEmpty(){
+   return top == -1;
+   }
+   
+   publiv boolean isFull(){
+    return currentSize == maxSize || top == maxSize-1;
+    }
+    
+    public V top(){
+      return V[top];
+    }
+    
+    public void push(V value){
+      currentSize++;
+      array[++top] = value;
+    }
+    
+    public V pop(){
+      currentSize--;
+      return array[top--];
+    }
+  }
