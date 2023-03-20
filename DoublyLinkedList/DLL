@@ -1,0 +1,91 @@
+public class DLL<T>{
+
+  public class Node {
+    public T data;
+    public Node prevNode;
+    public Node nextNode;
+  }
+  
+  public Node headnode;
+  public Node tailnode;
+  public int size;
+  
+  public DLL(){
+    this.headnode = null;
+    this.tailnode = null;
+  }
+  
+  public boolean isEmpty(){
+    if(headnode == null && tailnode == null)
+      return true;
+    return false;
+  }
+  
+  public Node getHeadNode(){
+      return headnode;
+  }
+  
+  public Node getTailNode(){
+      return tailnode;
+  }
+  
+  public int getSize(){
+    return size;
+  }
+  
+  public void insertAtHead(T data){
+    Node newNode = new Node();
+    newNode.data = data;
+    newNode.next = this.headnode;
+    newNode.prev = null;
+    if(headnode != null)
+      headnode.prevNode = newNode;
+    }
+    else{
+      tailnode = newNode;
+    this.headnode = newNode;
+    size++;
+  }
+  
+  public void insertAtEnd(T data){
+  
+    if(isEmpty()){
+      insertAtHead(data);
+      return;
+    }
+    Node newNode = new Node();
+    newNode.data = data;
+    newNode.nextNode = null;
+    newNode.prevNode = tailNode;
+    tailNode.nextNode = newNode;
+    tailNode = newNde;
+    size++;
+ }
+ 
+ public void deleteAtHead(){
+    if(isEmpty()){
+      return;
+    }
+    
+    headNode = headNode.nextNode;
+    if(headNode == null)
+      tailNode == null;
+    else
+      headNode.prev = null;
+    size--;
+ }
+ 
+ public void deleteAtEnd(){
+    if(isEmpty()){
+      return;
+    }
+    tailNode = tailNode.prevNode;
+    if(tailNode == null)
+      headNode = null;
+     }else{
+     tailNode.next = null;
+     }
+     size--;
+   }
+  
+  
