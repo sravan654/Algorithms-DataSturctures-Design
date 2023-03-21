@@ -1,0 +1,39 @@
+A tree is a graph that contains the following properties:
+
+It is undirected.
+It is acyclic (contains no cycles).
+It consists of a single connected component.
+
+Preorder traversal: The preorder traverses the tree in the following three steps:
+
+Visit the root node
+Recursively perform preorder traversal on the left child
+Recursively perform pre-order traversal on the right child
+
+
+Inorder traversal: The inorder tree traversal explores the tree in the following three steps:
+
+Recursively perform inorder traversal on the left child
+Visit the node
+Recursively perform inorder traversal on the right child
+
+Postorder traversal: The postorder traversal explores the tree in the following three steps:
+
+Recursively perform postorder traversal on the left child
+Recursively perform postorder traversal on the right child
+Visit the node
+
+ if we use the tree depth-first search pattern, we are guaranteed to reach a solution in 
+O(n)
+ time complexity unless there are some significant constraints!
+ 
+ 
+ Does my problem match this pattern?
+Yes, if either of these conditions is fulfilled:
+
+We have reason to believe that the solution is near the leaves of the tree.
+Components of the solution are listed along paths from the root to the leaves and finding the optimal solution requires traversal along these paths. The classic example of this is finding the height of the given tree.
+No, if either of these conditions is fulfilled:
+
+The input data is not in the form of a tree, or the cost of transforming it into a tree is too high, given the specified efficiency requirements.
+The solution requires traversing the tree one level at a time.
