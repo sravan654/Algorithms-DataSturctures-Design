@@ -1,3 +1,14 @@
+Complexities of Stack Operations
+Let’s look at the time complexity of each stack operation.
+
+Operation	Time Complexity
+isEmpty	O(1)
+top	O(1)
+size	O(1)
+push	O(1)
+pop	O(1)
+
+
 public class Stack {
    private V[] array;
    privat int top;
