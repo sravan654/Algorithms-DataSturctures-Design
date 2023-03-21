@@ -1,0 +1,43 @@
+Statement
+Given the root of a binary tree, flatten the tree into a linked list using the same Tree class.
+The left child of the linked list is always NULL, and the right child points to the next node in the list.
+The nodes in the linked list should be in the same order as the preorder traversal of the given binary tree.
+
+Constraints:
+
+−100≤
+ Node.value 
+≤
+100
+
+The tree contains nodes in the range 
+[
+1
+,
+500
+]
+
+public class Flatten{
+
+  public static BinaryTreeNode flatternTree(BinaryTreeNode root){
+    if(root == null) return null;
+  
+    BinaryTreeNode current = root;
+    BinaryTreeNode last = root;
+    
+    while(current != null){
+     
+      if(current.left != null){
+          last = current.left;
+          while(last.right != null){
+            last = last.right;
+          }
+          last.right = current.right;
+          current.right = current.left;
+          current.left = null;
+       }
+       current = current.right;
+     }
+    return root;
+   }
+  
