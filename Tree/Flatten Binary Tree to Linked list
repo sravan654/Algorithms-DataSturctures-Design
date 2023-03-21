@@ -1,0 +1,119 @@
+Statement
+Given the root of a binary tree, flatten the tree into a linked list using the same Tree class.
+The left child of the linked list is always NULL, and the right child points to the next node in the list.
+The nodes in the linked list should be in the same order as the preorder traversal of the given binary tree.
+
+Constraints:
+
+−100≤
+ Node.value 
+≤
+100
+
+The tree contains nodes in the range 
+[
+1
+,
+500
+]
+
+
+Binary Tree Node
+
+public class BinaryTreeNode{
+  private int data;
+  private BinaryTreeNode left;
+  private BinaryTreeNode right;
+  
+  public BinaryTreeNode(int d){
+    this.data = d;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+Binary Tree
+
+public class BinaryTree{
+  private BinaryTreeNode root;
+  
+  public BinaryTree(){
+    this.root = null;
+  }
+  
+  public BinaryTree(Integer Nodedata){
+    this.root = new BinaryTreeNode(nodedata);
+  }
+  
+  public BinaryTree(List<Integer> Nodedatalist){
+    this.root = null;
+    
+  }
+  
+  public void insert(int data){
+    BinaryTreeNode node = new BinaryTreeNode();
+    if(this.root == null)
+      this.root = node;
+    else{
+      BinaryTreeNode parent = null;
+      BinaryTreeNode temp = this.root;
+      
+      while(temp != null){
+        parent = temp;
+        if(data <= temp.data){
+          temp = temp.left;
+        }else{
+          temp = temp.right;
+        }
+      }
+      if(data <= temp.left)
+          parent.left = node;
+       else{
+          parent.right = node;
+        }
+     }
+   
+ private BinaryTreeNode findInBSTRec(BinaryTreeNode node, int nodeData) {
+        if (node == null)
+            return null;
+
+        if (node.data == nodeData) {
+            return node;
+        } else if (node.data > nodeData) {
+            return findInBSTRec(node.left, nodeData);
+        } else {
+            return findInBSTRec(node.right, nodeData);
+        }
+    }
+    public BinaryTreeNode findInBST(int nodeData) {
+        return findInBSTRec(this.root, nodeData);
+    }
+    public int getSubTreeNodeCount(BinaryTreeNode node) {
+        if (node == null) {
+            return 0;
+        } else {
+            return 1 + getSubTreeNodeCount(node.left) + getSubTreeNodeCount(node.right);
+        }
+    }
+    private BinaryTreeNode getTreeDeepCopyRec(BinaryTreeNode node) {
+        if (node != null) {
+            BinaryTreeNode newNode = new BinaryTreeNode(node.data);
+            newNode.left = getTreeDeepCopyRec(node.left);
+            newNode.right = getTreeDeepCopyRec(node.right);
+            return newNode;
+        } else {
+            return null;
+        }
+    }
+    public BinaryTree getTreeDeepCopy() {
+        if (this.root == null) {
+            return null;
+        } else {
+            BinaryTree treeCopy = new BinaryTree();
+            treeCopy.root = getTreeDeepCopyRec(root);
+            return treeCopy;
+        }
+    }
+
+}
+  
